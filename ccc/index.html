@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/common.css">
+	<script src="jquery-1.8.3.js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<script>
+	// 页面加载完成之后 在加载里面的东西
+	window.onload = function (){
+		var put = document.getElementById('put');
+		var colk = document.getElementById('colk');
+		put.onclick = function (){colk.style.display = 'block'}
+		colk.onmouseover = function (){colk.style.display = 'block'}
+		colk.onmouseout = function (){
+			colk.style.display = 'none'
+		}
+		put.onmouseout = function (){
+			colk.style.display = 'none'
+		}
+	}
+</script>
+<body>
+<!-- 头部 -->
+<div class="nav">
+    <div class="gWidth">
+        <div class="fl nav_left">
+            <p><a class="nav_la1" href="#">亲，请登录</a> <a class="nav_la2" href="#">免费注册</a></p>
+        </div>
+        <ul class="fr nav_right">
+            <li class="fl nav_rli">
+                <a class="fl nav_la2 navla3" href="#">我的淘宝</a>
+                <span class="fl iconfont icon-xiala"></span>
+                <span class="fl iconfont icon-caozuo-shangla"></span>
+                <ul class="nav_rli-ul1">
+                    <li><a class="nav_la2" href="#">已买到的宝贝</a></li>
+                    <li><a class="nav_la2" href="#">店铺动态</a></li>
+                    <li><a class="nav_la2" href="#">好友动态</a></li>
+                </ul>
+            </li>
+            <li class="fl nav_rli">
+                <span class="fl iconfont icon-xiazai1"></span>
+                <a class="fl nav_la2 navla3" href="#">购物车</a><strong class="fl">0</strong>
+                <span class="fl iconfont icon-xiala"></span>
+                <span class="fl iconfont icon-caozuo-shangla"></span>
+                <ul class="nav_rli-ul2">
+                    <li class="fl">您购物车里还没有任何宝贝。</li>
+                    <li class="fr nav_rli-2li"><a class="nav_rli-u2a" href="#">查看我的购物车</a></li>
+                </ul>
+            </li>
+            <li class="fl nav_rli">
+                <span class="fl iconfont icon-buoumaotubiao44"></span>
+                <a class="fl nav_la2 navla3" href="#">收藏夹</a>
+                <span class="fl iconfont icon-xiala"></span>
+                <span class="fl iconfont icon-caozuo-shangla"></span>
+                <ul class="nav_rli-ul3">
+                    <li><a class="nav_la2" href="#">收藏的宝贝</a></li>
+                    <li><a class="nav_la2" href="#">收藏的店铺</a></li>
+                </ul>
+            </li>
+            <li class="fl nav_rli">
+                <a class="fl nav_la2 navla3" href="#">我要逛</a>
+                <span class="fl iconfont icon-xiala"></span>
+                <span class="fl iconfont icon-caozuo-shangla"></span>
+                <ul class="nav_rli-ul4">
+                    <li><a class="nav_la2" href="#">逛上新</a></li>
+                    <li><a class="nav_la2" href="#">逛优惠</a></li>
+                    <li><a class="nav_la2" href="#">小分队</a></li>
+                    <li><a class="nav_la2" href="#">用手机逛</a></li>
+                    <li><a class="nav_la2" href="#">商品分类</a></li>
+                </ul>
+            </li>
+            <span class="fl shuxian">|</span>
+            <li class="fl nav_rli">
+                <a class="fl nav_la2 navla3" href="#">卖家中心</a>
+                <span class="fl iconfont icon-xiala"></span>
+                <span class="fl iconfont icon-caozuo-shangla"></span>
+                <ul class="nav_rli-ul5">
+                    <li><a class="nav_la2" href="#">已卖出的宝贝</a></li>
+                    <li><a class="nav_la2" href="#">出售中的宝贝</a></li>
+                    <li><a class="nav_la2" href="#">卖家服务市场</a></li>
+                    <li><a class="nav_la2" href="#">卖家培训中心</a></li>
+                </ul>
+            </li>
+            <li class="fl nav_rli">
+                <a class="fl nav_la2" href="#">手机版</a>
+            </li>
+            <li class="fl nav_rli">
+                <a class="fl nav_la2" href="#">联系客户</a>
+            </li>
+            <li class="fl nav_rli">
+            	<span class="fl iconfont icon-caidan"></span>
+                <a class="fl nav_la2 navla3" href="#">网站导航</a>
+                <span class="fl iconfont icon-xiala"></span>
+                <span class="fl iconfont icon-caozuo-shangla"></span>
+                <ul class="nav_rli-ul6">
+                    <li class="fl">
+                        <ul class="nav_rli-u6_lu">
+                            <h4 style="text-align:left; margin-left:20px;">主题市场</h4>
+                            <li class="fl">爱美女</li>
+                            <li class="fl">品质男人</li>
+                            <li class="fl">跳蚤街</li>
+                            <li class="fl">全球购</li>
+                            <li class="fl">品牌街</li>
+                            <li class="fl">生活服务</li>
+                            <li class="fl">我要结婚</li>
+                            <li class="fl">辣妈萌宝</li>
+                            <li class="fl">车生活</li>
+                            <li class="fl">淘创意</li>
+                            <li class="fl">爱美妆</li>
+                            <li class="fl">运动户外</li>
+                            <li class="fl">家用电器</li>
+                            <li class="fl">私人订制</li>
+                            <li class="fl">狠爱</li>
+                            <li class="fl">网络游戏</li>
+                            <li class="fl">品牌控</li>
+                        </ul>
+                    </li>
+                    <li class="fl">
+                        <ul class="nav_rli-u6_lu">
+                            <h4 style="text-align:left; margin-left:20px;">主题市场</h4>
+                            <li class="fl">爱美女</li>
+                            <li class="fl">品质男人</li>
+                            <li class="fl">跳蚤街</li>
+                            <li class="fl">全球购</li>
+                            <li class="fl">品牌街</li>
+                            <li class="fl">生活服务</li>
+                            <li class="fl">我要结婚</li>
+                            <li class="fl">辣妈萌宝</li>
+                            <li class="fl">车生活</li>
+                            <li class="fl">淘创意</li>
+                            <li class="fl">爱美妆</li>
+                            <li class="fl">运动户外</li>
+                            <li class="fl">家用电器</li>
+                            <li class="fl">私人订制</li>
+                            <li class="fl">狠爱</li>
+                            <li class="fl">网络游戏</li>
+                            <li class="fl">品牌控</li>
+                        </ul>
+                    </li>
+                    <li class="fl">
+                        <ul class="nav_rli-u6_lu">
+                            <h4 style="text-align:left; margin-left:20px;">主题市场</h4>
+                            <li class="fl">爱美女</li>
+                            <li class="fl">品质男人</li>
+                            <li class="fl">跳蚤街</li>
+                            <li class="fl">全球购</li>
+                            <li class="fl">品牌街</li>
+                            <li class="fl">生活服务</li>
+                            <li class="fl">我要结婚</li>
+                            <li class="fl">辣妈萌宝</li>
+                            <li class="fl">车生活</li>
+                            <li class="fl">淘创意</li>
+                            <li class="fl">爱美妆</li>
+                            <li class="fl">运动户外</li>
+                            <li class="fl">家用电器</li>
+                            <li class="fl">私人订制</li>
+                            <li class="fl">狠爱</li>
+                            <li class="fl">网络游戏</li>
+                            <li class="fl">品牌控</li>
+                        </ul>
+                    </li>
+                    <li class="fl">
+                        <ul>
+                            <h4 style="text-align:left; margin-left:20px;">主题市场</h4>
+                            <li class="fl">爱美女</li>
+                            <li class="fl">品质男人</li>
+                            <li class="fl">跳蚤街</li>
+                            <li class="fl">全球购</li>
+                            <li class="fl">品牌街</li>
+                            <li class="fl">生活服务</li>
+                            <li class="fl">我要结婚</li>
+                            <li class="fl">辣妈萌宝</li>
+                            <li class="fl">车生活</li>
+                            <li class="fl">淘创意</li>
+                            <li class="fl">爱美妆</li>
+                            <li class="fl">运动户外</li>
+                            <li class="fl">家用电器</li>
+                            <li class="fl">私人订制</li>
+                            <li class="fl">狠爱</li>
+                            <li class="fl">网络游戏</li>
+                            <li class="fl">品牌控</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 搜索 -->
+<div class="soso gWidth">
+    <img class="fl" src="img/logo.png">
+    <div class="soso_so fl">
+        <div class="soso_bbox fl">
+            <div class="soso_bobei fl">
+                宝贝<span class="iconfont icon-xiala fr"></span>
+            </div>
+            <input class="soso_kuang fl" type="text" placeholder="    搜‘虾米音乐’试试，领8元音乐礼包">
+            <input type="button" class="fl soso_ssan" value="搜索">
+            <div class="soso_bobei-dianpu">店铺</div>
+        </div>
+        <a class="soso_gjss nav_la2" href="#">高级<br/>搜索</a>
+        <!--soso_kgx-->
+        <div class="soso_kgx">
+            <a class="fl nav_la2" href="#">女士凉鞋</a>
+            <a class="fl nav_la2" href="#">男士T恤</a>
+            <a class="fl nav_la2" href="#">连衣裙</a>
+            <a class="fl nav_la2" href="#">时尚女包</a>
+            <a class="fl nav_la2" href="#">女士T恤</a>
+            <a class="fl nav_la2" href="#">雪纺衫</a>
+            <a class="fl nav_la2" href="#">中老年女装</a>
+            <a class="fl nav_la2" href="#">风衣</a>
+            <a class="fl nav_la2" href="#">童装</a>
+            <a class="fl nav_la2" href="#">孕妇装</a>
+            <a class="fl nav_la2" href="#">运动套装</a>
+            <a class="fl nav_la2" href="#">打底裤</a>
+            <a class="fl nav_la2" href="#">蚊帐</a>
+            <a class="fl nav_la2" href="#">防晒衣</a>
+        </div>
+    </div>
+    <!--ewm-->
+    <div class="ewm fr">
+        <h3>手机淘宝</h3>
+        <img src="img/code.png" />
+        <div class="ewm_cha"><i class="fa">x</i></div>
+    </div>
+</div>
+<!-- 特色 -->
+<div class="ts">
+    <div class="gWidth">
+        <div class="ts_left fl">
+            <h4>淘宝特色服务</h4>
+            <ul class="ts_ltul">
+                <li class="ts_ltuli">
+                    <h5 class="ts_ltlih5"><img src="img/lan.png" alt="">主题市场</h5>
+                    <ul class="ts_ltuli-ul">
+                        <li><a href="#">爱美女人</a><a href="#">运动派</a><a href="#">情侣</a></li>
+                        <li><a href="#">品质男人</a><a href="#">孕婴童</a><a href="#">家具</a></li>
+                        <li><a href="#">美容护肤</a><a href="#">中老年</a><a href="#">美食</a></li>
+                        <li><a href="#">美嫁新娘</a><a href="#">有车族</a><a href="#">装修</a></li>
+                        <li><a href="#">家庭净化</a><a href="#">游戏</a><a href="#">动漫</a><a href="#">爱好</a></li>
+                    </ul>
+                </li>
+                <li class="ts_ltuli1">
+                    <h5 class="ts_ltlih51"><img src="img/lan.png" alt="">主题市场</h5>
+                    <ul class="ts_ltuli-ul">
+                        <li><a href="#">爱美女人</a><a href="#">运动派</a><a href="#">情侣</a></li>
+                        <li><a href="#">品质男人</a><a href="#">孕婴童</a><a href="#">家具</a></li>
+                        <li><a href="#">美容护肤</a><a href="#">中老年</a><a href="#">美食</a></li>
+                        <li><a href="#">美嫁新娘</a><a href="#">有车族</a><a href="#">装修</a></li>
+                        <li><a href="#">家庭净化</a><a href="#">游戏</a><a href="#">动漫</a><a href="#">爱好</a></li>
+                    </ul>
+                </li>
+                <li class="ts_ltuli2">
+                    <h5 class="ts_ltlih52"><img src="img/lan.png" alt="">主题市场</h5>
+                    <ul class="ts_ltuli-ul">
+                        <li><a href="#">爱美女人</a><a href="#">运动派</a><a href="#">情侣</a></li>
+                        <li><a href="#">品质男人</a><a href="#">孕婴童</a><a href="#">家具</a></li>
+                    </ul>
+                </li>
+                <li class="ts_ltuli3">
+                    <h5 class="ts_ltlih53"><img src="img/lan.png" alt="">主题市场</h5>
+                    <ul class="ts_ltuli-ul">
+                        <li><a href="#">爱美女人</a><a href="#">运动派</a><a href="#">情侣</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="ts_right fr">
+            <ul class="ts_rt_top fl">
+                <li class="fl ts_rt_top_i"><a href="#">天猫</a></li>
+                <li class="fl ts_rt_top_i"><a href="#">聚划算</a></li>
+                <li class="fl ts_rt_top_i"><a href="#">超市</a></li>
+                <li class="fl ts_rt_top_i1 ding"><a href="#">拍卖</a></li>
+                <li class="fl ts_rt_top_i1"><a href="#">一淘网</a></li>
+                <li class="fl ts_rt_top_i1"><a href="#">电器城</a></li>
+                <li class="fl ts_rt_top_i1"><a href="#">Hitao装扮</a></li>
+                <li class="fl ts_rt_top_i1"><a href="#">旅行</a></li>
+                <li class="fl ts_rt_top_i1"><a href="#">云手机</a></li>
+                <li class="fl ts_rt_top_i1"><a href="#">特色中国</a></li>
+                <li class="fr ts_rt_top_i1 ding1"><a href="#">消费者保障</a></li>
+            </ul>
+			
+			
+			
+			
+			
+            <div class="ts_rt_bottom">
+                <div class="ts_rt_bom_left fl">
+					<div class="content fl">
+					    <ul class="imgBox">
+					        <li><a href="#"><img src="img/1.jpg"></a></li>
+					        <li><a href="#"><img src="img/1.jpg"></a></li>
+					        <li><a href="#"><img src="img/1.jpg"></a></li>
+					        <li><a href="#"><img src="img/1.jpg"></a></li>
+					        <li><a href="#"><img src="img/1.jpg"></a></li>
+					    </ul>
+					    <div class="currentNum">
+					        <span class="imgNum mark-color"></span>
+					        <span class="imgNum"></span>
+					        <span class="imgNum"></span>
+					        <span class="imgNum"></span>
+					        <span class="imgNum"></span>
+					    </div>
+					</div>
+					<a class="fr" href="#"><img src="img/6.6.jpg" ></a>
+					<!--content-down-->
+					<div class="content-down fl">
+					    <ul class="imgBox1">
+					        <li>
+					            <a href="#"><img src="img/01.png" /></a>
+					            <a href="#"><img src="img/02.jpg" /></a>
+					        </li>
+					        <li>
+					            <a href="#"><img src="img/01.png" /></a>
+					            <a href="#"><img src="img/02.jpg" /></a>
+					        </li>
+					        <li>
+					            <a href="#"><img src="img/01.png" /></a>
+					            <a href="#"><img src="img/02.jpg" /></a>
+					        </li>
+					        <li>
+					            <a href="#"><img src="img/01.png" /></a>
+					            <a href="#"><img src="img/02.jpg" /></a>
+					        </li>
+					        <li>
+					            <a href="#"><img src="img/01.png" /></a>
+					            <a href="#"><img src="img/02.jpg" /></a>
+					        </li>
+					    </ul>
+					    <div class="currentNum-down">
+					        <span class="imgNum1 mark-color"></span>
+					        <span class="imgNum1"></span>
+					        <span class="imgNum1"></span>
+					        <span class="imgNum1"></span>
+					        <span class="imgNum1"></span>
+					    </div>
+					</div>
+					<a class="fr" href="#"><img src="img/15.jpg" /></a>
+				</div>
+            </div>
+				
+				
+				
+				
+            <div class="ts_rt_bom_right fr">
+                <div class="bom_right_top">
+                    <div class="bom_rt_tpl2">
+                        <ul class="bom_rt_tpul fl">
+                            <li class="fl bom_rt_tpli">
+                                <a href="#">公告</a>
+                                <ul class="bom_rt_tpul2 fl">
+                                    <li class="bom_rt_tpli2 bom_rt_tpli3 fl">最受赞赏公司阿里折桂</li>
+                                    <li class="bom_rt_tpli2 fl">新一代好友互动“来往”</li>
+                                    <li class="bom_rt_tpli2 fl">来往九大特色功能来袭</li>
+                                    <li class="bom_rt_tpli2 fl">淘字号服务开放申请了!</li>
+                                </ul>
+                            </li>
+                            <li class="fl bom_rt_tpli"><a href="#">规则</a></li>
+                            <li class="fl bom_rt_tpli"><a href="#">论坛</a></li>
+                            <li class="fl bom_rt_tpli"><a href="#">安全</a></li>
+                            <li class="fl bom_rt_tpli"><a href="#">公益</a></li>
+                        </ul>
+                        
+                    </div>
+					<div class="bom_rt_div">
+						<img class="fl" src="img/rtu.png" alt="">
+						<div class="fr bom_div-div">
+							<p class="bom_div-p1">hi! 你好</p>
+							<p class="bom_div-p">
+								<a class="bom_div-sp"><img src="img/tao.gif" alt="">领淘金币抵钱</a>
+								<a class="bom_div-sp1">会员俱乐部</a>
+							</p>
+						</div>
+						<p class="bom_div-p2 fl">
+							<span class="bom_div-sp3"><img src="img/ren.gif" alt=""><a href="#">登录</a></span>
+							<span class="bom_div-sp2"><a href="#">免费注册</a></span>
+							<span class="bom_div-sp2"><a href="#">免费开店</a></span>
+						</p>
+					</div>
+                </div>
+				<div class="bom_right_bottom">
+					<div class="bom_right_bot fl">
+						<h4>便民服务</h4>
+						<ul class="fl bom_rt_botu">
+							<li class="fl bom_rt_boti">
+								<img src="img/hf.png" alt="">
+								<p><a class="bom_rt_boti_aaa" href="#">话费</a></p>
+								<div class="bom_rt_botddd">
+									<div class="bom_rt_botd fl">
+                            			<div class="bom_rt_botd2">
+                                			<span>号码</span>
+                                			<input class="bom_rt_botin" type="text"  placeholder="手机号、固话号">
+                            			</div>
+                            			<div class="bom_rt_botd3">
+                            			    <span>面值</span>
+                            			    <input class="bom_rt_botin" type="text" value="50" >
+                            			</div>
+                            			<div class="bom_rt_botd4">
+                            			    <span class="bom_rt_botap2">售价&nbsp;￥&nbsp;</span><span class="bom_rt_botap1">49-49.8</span>
+                            			</div>
+                            			<div class="bom_rt_botd5" style="margin-top: 10px">
+                            			    <a href="#" class="bom_rt_bota">立即充值</a>
+                            			    <a href="#" class="bom_rt_bota1">定期充值</a>
+                            			    <a href="#" class="bom_rt_bota2">哇！绝版淘公仔！</a>
+                            			</div>
+									</div>
+								</div>
+							</li>
+							<li class="fl bom_rt_boti">
+								<img src="img/yx.png" alt="">
+								<p><a class="bom_rt_boti_aaa" href="#">游戏</a></p>
+							</li>
+							<li class="fl bom_rt_boti">
+								<img src="img/lx.png" alt="">
+								<p><a class="bom_rt_boti_aaa" href="#">旅行</a></p>
+							</li>
+							<li class="fl bom_rt_boti">
+								<img src="img/bx.png" alt="">
+								<p><a class="bom_rt_boti_aaa" href="#">保险</a></p>
+							</li>
+                        </ul>
+                        <ul class="fl bom_rt_botu">
+                            <li class="fl bom_rt_boti">
+                                <img src="img/hf.png" alt="">
+                                <p><a class="bom_rt_boti_aaa" href="#">话费</a></p>
+                            </li>
+                            <li class="fl bom_rt_boti">
+                                <img src="img/yx.png" alt="">
+                                <p><a class="bom_rt_boti_aaa" href="#">游戏</a></p>
+                            </li>
+                            <li class="fl bom_rt_boti">
+                                <img src="img/lx.png" alt="">
+                                <p><a class="bom_rt_boti_aaa" href="#">旅行</a></p>
+                            </li>
+                            <li class="fl bom_rt_boti">
+                                <img src="img/bx.png" alt="">
+                                <p><a class="bom_rt_boti_aaa" href="#">保险</a></p>
+                            </li>
+                        </ul>
+                        <ul class="fl bom_rt_botu">
+                            <li class="fl bom_rt_boti">
+                                <img src="img/hf.png" alt="">
+                                <p><a class="bom_rt_boti_aaa" href="#">话费</a></p>
+                            </li>
+                            <li class="fl bom_rt_boti">
+                                <img src="img/yx.png" alt="">
+                                <p><a class="bom_rt_boti_aaa" href="#">游戏</a></p>
+                            </li>
+                            <li class="fl bom_rt_boti">
+                                <img src="img/lx.png" alt="">
+                                <p><a class="bom_rt_boti_aaa" href="#">旅行</a></p>
+                            </li>
+                            <li class="fl bom_rt_boti">
+                                <img src="img/bx.png" alt="">
+                                <p><a class="bom_rt_boti_aaa" href="#">保险</a></p>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </div>
+        </div>
+        <img src="img/11.png" alt="">
+    </div>
+</div>
+<!-- 男女 -->
+<div class="nn gWidth">
+    <ul class="nn_left fl">
+        <li class="nn_ltli">
+            <ul class="nn_ltiu nn_ltiu1 fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nn_ltiu fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nn_ltiu nn_ltiu1 fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nn_ltiu fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <img style="margin:24px 0 0 0;" src="img/tm.png" height="70" width="880" alt="">
+        </li>
+        <li class="nn_ltli">
+            <ul class="nn_ltiu nn_ltiu1 fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nn_ltiu fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nn_ltiu nn_ltiu1 fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nn_ltiu fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <img style="margin:24px 0 0 0;" src="img/bk.png" alt="">
+        </li>
+        <li class="nn_ltli">
+            <ul class="nn_ltiu nn_ltiu1 fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nn_ltiu fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nn_ltiu nn_ltiu1 fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nn_ltiu fl">
+                <li class="nn_ltiu_li">
+                <h4>男女服饰　<span class="iconfont">&#xe502;</span>　<span>今日活动：</span> <u>色彩男装 五折起包邮！</u></h4>
+                    <div class="nn_ltiu_lidiv fl">
+                        <div>
+                            <h5><a href="#">女装新品</a></h5>
+                            <p><a href="#">2.5元起抢购</a></p>
+                            <img src="img/nvz.png" height="85" width="100" alt="">
+                        </div>
+                        <div>
+                            <h5><a href="#">色彩男装</a></h5>
+                            <p><a href="#">五折起包邮</a></p>
+                            <img src="img/nanz.png" height="85" width="100" alt="">
+                        </div>
+                    </div>
+                    <ul class="nn_ltiu_liul fl">
+                        <li class="p2">
+                            <p>
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p class="p1">
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="p4">
+                                <strong><a class="a" href="#">女装</a></strong>
+                                <a href="#">衬衫</a>
+                                <a class="p" href="#">雪纺衫</a>
+                                <a href="#">防晒衣</a>
+                                <a href="#">小西装</a>
+                                <a href="#">运动套装</a>
+                            </p>
+                            <p>
+                                <strong><a class="a p" href="#">连衣裙</a></strong>
+                                <a href="#">雪衫裙</a>
+                                <a href="#">长裙</a>
+                                <a href="#">短裙</a>
+                                <a href="#">蕾丝裙</a>
+                                <a href="#">女士内衣</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">T恤</a></strong>
+                                <a class="p" href="#">打底衫</a>
+                                <a href="#">短袖T</a>
+                                <a href="#">蝙蝠袖</a>
+                                <a href="#">上衣</a>
+                                <a href="#">开衫</a>
+                            </p>
+                            <p>
+                                <strong><a class="a" href="#">裤子</a></strong>
+                                <a href="#">小脚裤</a>
+                                <a href="#">连体裤</a>
+                                <a href="#">短裤</a>
+                                <a class="p" href="#">七分裤</a>
+                                <a href="#">休闲裤</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <img style="margin:24px 0 34px 0;" src="img/bb.png"alt="">
+        </li>
+    </ul>
+    <div class="nn_right fr">
+        <ul class="nn_rt_ul">
+            <h2>发现●好货</h2>
+            <li class="nn_rt_uli">
+                <a class="fl" href="#"><img src="img/sb.png" alt=""></a>
+                <a class="nn_rt_a fl" href="#"><strong>淘宝双肩包男女韩</strong></a>
+                <a class="nn_rt_a1 fl" href="#"><span>“质量、款式很好，没有想象”</span></a>
+                <a class="nn_rt_a2 fl" href="#">4732 收藏</a>
+            </li>
+            <li class="nn_rt_uli">
+                <a class="fl" href="#"><img src="img/rw.png" alt=""></a>
+                <a class="nn_rt_a fl" href="#"><strong>淘宝双肩包男女韩</strong></a>
+                <a class="nn_rt_a1 fl" href="#"><span>“质量、款式很好，没有想象”</span></a>
+                <a class="nn_rt_a2 fl" href="#">4732 收藏</a>
+            </li>
+            <li class="nn_rt_uli">
+                <a class="fl" href="#"><img src="img/sb.png" alt=""></a>
+                <a class="nn_rt_a fl" href="#"><strong>淘宝双肩包男女韩</strong></a>
+                <a class="nn_rt_a1 fl" href="#"><span>“质量、款式很好，没有想象”</span></a>
+                <a class="nn_rt_a2 fl" href="#">4732 收藏</a>
+            </li>
+            <li class="nn_rt_uli">
+                <a class="fl" href="#"><img src="img/rw.png" alt=""></a>
+                <a class="nn_rt_a fl" href="#"><strong>淘宝双肩包男女韩</strong></a>
+                <a class="nn_rt_a1 fl" href="#"><span>“质量、款式很好，没有想象”</span></a>
+                <a class="nn_rt_a2 fl" href="#">4732 收藏</a>
+            </li>
+            <li class="nn_rt_uli1 fl">
+                <a class="fl" href="#"><img src="img/21.png" alt=""></a>
+                <a class="fl" href="#"><img src="img/22.png" alt=""></a>
+                <a class="fl" href="#"><img src="img/23.png" alt=""></a>
+                <a class="fl" href="#"><img src="img/24.png" alt=""></a>
+                <a class="fl" href="#"><img src="img/25.png" alt=""></a>
+                <a class="fl" href="#"><img src="img/26.png" alt=""></a>
+                <a class="fl" href="#"><img src="img/27.png" alt=""></a>
+                <a class="fl" href="#"><img src="img/28.png" alt=""></a>
+                <a class="fl" href="#"><img src="img/29.png" alt=""></a>
+            </li>
+            <p class="nn_rt_uli2"><a class="nn_rt_uli2_a" href="#">换一批试试</a></p>
+        </ul>
+        <div class="nn_rt_ul">
+            <h2>发现●好店</h2>
+            <div class="nn_rt_uli3">
+                <a class="fl" href="#"><img src="img/dtx.png" alt=""></a>
+                <p class="nn_rt_p1"><a href="#">Didar</a></p>
+                <p class="nn_rt_p"><a href="#">主营：服饰鞋包</a></p>
+                <ul class="nn_rt_dh">
+                    <li class="fl"><a href="#">可爱</a></li>
+                    <li class="fl"><a href="#">麦兜</a></li>
+                    <li class="fl"><a href="#">未来式</a></li>
+                </ul>
+                <div class="nn_rt_tu">
+                    <a href="#"><img src="img/24.png" alt=""></a>
+                    <a href="#"><img src="img/25.png" alt=""></a>
+                    <a href="#"><img src="img/26.png" alt=""></a>
+                </div>
+            </div>
+            <div class="nn_rt_uli3">
+                <a class="fl" href="#"><img src="img/dtx.png" alt=""></a>
+                <p class="nn_rt_p1"><a href="#">Didar</a></p>
+                <p class="nn_rt_p"><a href="#">主营：服饰鞋包</a></p>
+                <ul class="nn_rt_dh">
+                    <li class="fl"><a href="#">可爱</a></li>
+                    <li class="fl"><a href="#">麦兜</a></li>
+                    <li class="fl"><a href="#">未来式</a></li>
+                </ul>
+                <div class="nn_rt_tu">
+                    <a href="#"><img src="img/24.png" alt=""></a>
+                    <a href="#"><img src="img/25.png" alt=""></a>
+                    <a href="#"><img src="img/26.png" alt=""></a>
+                </div>
+            </div>
+            <p class="nn_rt_uli2"><a class="nn_rt_uli2_a" href="#">换一批试试</a></p>
+        </div>
+    </div>
+    <img style="margin-top:10px;" src="img/100.png" alt="">
+</div>
+<!-- 星店 -->
+<div class="gWidth">
+    <ul class="xd"> 
+        <li class="xd_li fl">
+            <h4>星店　<span>明星开店在这里</span></h4>
+            <div class="xd_li_d">
+                <img src="img/sbt.png"alt="">
+                <p><a class="pp" href="#">栓胞胎团体受瞩目</a></p>
+                <p><a class="pp1" href="#">发行首张EP [恋爱过天]</a></p>
+            </div>
+            <div class="xd_li_d2">
+                <img src="img/x1.png" alt=""><img src="img/x2.png" alt="">
+                <p class="pp2"><a>李涛力推</a><a>辣妈曾恺玹</a></p>
+                <p class="pp3"><a href="#">手机特卖</a><span>|</span><a href="#">小泽玛利亚</a><span>|</span><a href="#">潮流</a></p>
+                <p class="pp4"><a href="#">[明星同款]</a>　<a href="#">栗子姐夏季街拍</a></p>
+            </div>
+        </li>
+        <li class="xd_li fl">
+            <h4>星店　<span>明星开店在这里</span></h4>
+            <div class="xd_li_d">
+                <img src="img/sbt.png"alt="">
+                <p><a class="pp" href="#">栓胞胎团体受瞩目</a></p>
+                <p><a class="pp1" href="#">发行首张EP [恋爱过天]</a></p>
+            </div>
+            <div class="xd_li_d2">
+                <img src="img/x1.png" alt=""><img src="img/x2.png" alt="">
+                <p class="pp2"><a>李涛力推</a><a>辣妈曾恺玹</a></p>
+                <p class="pp3"><a href="#">手机特卖</a><span>|</span><a href="#">小泽玛利亚</a><span>|</span><a href="#">潮流</a></p>
+                <p class="pp4"><a href="#">[明星同款]</a>　<a href="#">栗子姐夏季街拍</a></p>
+            </div>
+        </li>
+        <li class="xd_li fl">
+            <h4>星店　<span>明星开店在这里</span></h4>
+            <div class="xd_li_d">
+                <img src="img/sbt.png"alt="">
+                <p><a class="pp" href="#">栓胞胎团体受瞩目</a></p>
+                <p><a class="pp1" href="#">发行首张EP [恋爱过天]</a></p>
+            </div>
+            <div class="xd_li_d2">
+                <img src="img/x1.png" alt=""><img src="img/x2.png" alt="">
+                <p class="pp2"><a>李涛力推</a><a>辣妈曾恺玹</a></p>
+                <p class="pp3"><a href="#">手机特卖</a><span>|</span><a href="#">小泽玛利亚</a><span>|</span><a href="#">潮流</a></p>
+                <p class="pp4"><a href="#">[明星同款]</a>　<a href="#">栗子姐夏季街拍</a></p>
+            </div>
+        </li>
+        <li class="xd_li fl">
+            <h4>星店　<span>明星开店在这里</span></h4>
+            <div class="xd_li_d">
+                <img src="img/sbt.png"alt="">
+                <p><a class="pp" href="#">栓胞胎团体受瞩目</a></p>
+                <p><a class="pp1" href="#">发行首张EP [恋爱过天]</a></p>
+            </div>
+            <div class="xd_li_d2">
+                <img src="img/x1.png" alt=""><img src="img/x2.png" alt="">
+                <p class="pp2"><a>李涛力推</a><a>辣妈曾恺玹</a></p>
+                <p class="pp3"><a href="#">手机特卖</a><span>|</span><a href="#">小泽玛利亚</a><span>|</span><a href="#">潮流</a></p>
+                <p class="pp4"><a href="#">[明星同款]</a>　<a href="#">栗子姐夏季街拍</a></p>
+            </div>
+        </li>
+        <li class="xd_li fl">
+            <h4>星店　<span>明星开店在这里</span></h4>
+            <div class="xd_li_d">
+                <img src="img/sbt.png"alt="">
+                <p><a class="pp" href="#">栓胞胎团体受瞩目</a></p>
+                <p><a class="pp1" href="#">发行首张EP [恋爱过天]</a></p>
+            </div>
+            <div class="xd_li_d2">
+                <img src="img/x1.png" alt=""><img src="img/x2.png" alt="">
+                <p class="pp2"><a>李涛力推</a><a>辣妈曾恺玹</a></p>
+                <p class="pp3"><a href="#">手机特卖</a><span>|</span><a href="#">小泽玛利亚</a><span>|</span><a href="#">潮流</a></p>
+                <p class="pp4"><a href="#">[明星同款]</a>　<a href="#">栗子姐夏季街拍</a></p>
+            </div>
+        </li>
+        <li class="xd_li fl">
+            <h4>星店　<span>明星开店在这里</span></h4>
+            <div class="xd_li_d">
+                <img src="img/sbt.png"alt="">
+                <p><a class="pp" href="#">栓胞胎团体受瞩目</a></p>
+                <p><a class="pp1" href="#">发行首张EP [恋爱过天]</a></p>
+            </div>
+            <div class="xd_li_d2">
+                <img src="img/x1.png" alt=""><img src="img/x2.png" alt="">
+                <p class="pp2"><a>李涛力推</a><a>辣妈曾恺玹</a></p>
+                <p class="pp3"><a href="#">手机特卖</a><span>|</span><a href="#">小泽玛利亚</a><span>|</span><a href="#">潮流</a></p>
+                <p class="pp4"><a href="#">[明星同款]</a>　<a href="#">栗子姐夏季街拍</a></p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<!-- 热卖 -->
+<div class="gWidth">
+    <div class="rm">
+        <div class="rm_nav fl">
+            <div class="rm_nav_rm fl">
+                <a href="#">热卖单品</a>
+            </div>
+            <ul class="fr rm_nav_nv">
+                <li class="fl"><a href="#">秋装</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">男夹克</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">运动服</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">运动装</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">运动库</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">男卫衣</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">男上衣</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">产妇帽</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">男棉衣</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">棉马甲</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">运动服</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">运动装</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">运动库</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">男卫衣</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">男上衣</a></li><span class="fl">|</span>
+                <li class="fl"><a href="#">更多</a></li>
+            </ul>
+        </div>
+        <ul class="nr">
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+        </ul>
+        <ul class="nr">
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+            <li class="nr_li fl">
+                <div class="nr_li_img">
+                    <img src="img/fu.gif" alt="">
+                </div>
+                <p>月销5968双 真皮短靴</p>
+                <p class="ppp">￥ 298.00</p>
+                <span class="nr_li_sp">￥ 558.00</span> <span> | </span> <span>月销2424件</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 尾部 -->
+<div class="wb gWidth">
+        <div class="wb_nr fl">
+            <h1><img src="img/wd4.png"><span>消费者保障</span></h1>
+            <a class="wb_a" href="#">保障范围</a>
+            <a class="wb_a" href="#">退货退款流程</a>
+            <a class="wb_a" href="#">服务中心</a>
+            <a class="wb_a" href="#">更多特色服务</a>
+        </div>
+        <div class="wb_nr fl">
+            <h1><img src="img/wd1.png"><span>新手上路</span></h1>
+            <a class="wb_a" href="#">新手专区</a>
+            <a class="wb_a"v href="#">消费警示</a>
+            <a class="wb_a" href="#">交易安全</a>
+            <a class="wb_a margin-r" href="#">24小时在线帮助</a>
+        </div>
+        <div class="wb_nr fl">
+            <h1><img src="img/wd2.png"><span>付款方式</span></h1>
+            <a class="wb_a2" href="#">支付宝快捷支付</a>
+            <a class="wb_a2" href="#">支付宝付款</a>
+            <a class="wb_a2" href="#">支付宝余额付款</a>
+            <a class="wb_a" href="#">货到付款</a>
+        </div>
+        <div class="wb_nr fl">
+            <h1><img src="img/wd3.png"><span>淘宝特色</span></h1>
+            <a class="wb_a" href="#">淘宝指数</a>
+            <a class="wb_a" href="#">淘公仔</a>
+            <a class="wb_a" href="#">手机淘宝</a>
+            <a class="wb_a" href="#">旺信</a>
+        </div>
+    </div>
+
+    <div class="al">
+        <div class="al-right">
+            <div class="al-nav">
+                <a href="#">阿里巴巴集团</a>|
+                <a href="#">阿里巴巴国际站</a>|
+                <a href="#">阿里巴巴中国站</a>|
+                <a href="#">全球速卖通</a>|
+                <a href="#">淘宝网</a>|
+                <a href="#">天猫</a>|
+                <a href="#">聚划算</a>|
+                <a href="#">一淘</a>|
+                <a href="#">阿里妈妈</a>|
+                <a href="#">阿里云计算</a>|
+                <a href="#">云OS</a>|
+                <a href="#">万网</a>|
+                <a href="#">支付宝</a>|
+                <a href="#">来往</a>
+            </div>
+            <div class="guyu_taob">
+                <a href="#">关于淘宝</a>
+                <a href="#">合作伙伴</a>
+                <a href="#">营销中心</a>
+                <a href="#">廉正举报</a>
+                <a href="#">联系客服</a>
+                <a href="#">开放平台</a>
+                <a href="#">诚征英才</a>
+                <a href="#">联系我们</a>
+                <a href="#">网站地图</a>
+                <a href="#">法律声明</a>
+                <span class="guyu_banquan">&copy; 2014 Taobao.com 版权所有</span>
+            </div>
+            <p class="guyu_banquan"><span>网络文化经营许可证：文网文[2010]040号</span>|<span>增值电信业务经营许可证：浙B2-20080224-1</span>|<span>信息网络传播视听节目许可证：1109364号</span></p>
+            <div class="some-info">
+                <img src="img/z.gif" />
+            </div>
+        </div>
+        <div class="tao-man">
+            <img src="img/da.gif" />
+        </div>
+    </div>
+
+
+
+<!-- js -->
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/img-show.js"></script>
+</body>
+</html>
